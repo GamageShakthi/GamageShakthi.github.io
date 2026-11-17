@@ -1,79 +1,47 @@
-# Shakthi Gamage — Personal Website
+# Shakthi Gamage | Personal Website
 
-A clean, responsive personal website built with HTML, CSS and JavaScript. There is no build step or framework.
+A responsive personal website built with HTML, CSS and JavaScript. It uses a dark charcoal theme, readable text and compact image frames.
 
-## Preview the website
+## Preview
 
-Open `index.html` in your browser. Image placeholders will remain visible until you add files with the exact names listed below.
+Open `index.html` in a browser. Place your image files in the `assets` folder using the exact names below.
 
-## Add your photos and project images
+## Images
 
-1. Download and extract `shakthi-personal-website.zip` on your computer.
-2. Open the extracted `shakthi-personal-website` folder.
-3. Open the `assets` folder.
-4. Copy your image files into `assets` and rename them to match the names below exactly.
-5. Keep the file extension as `.jpg` if using the names below. If your image is a PNG, either export it as JPG or update the matching image path in `index.html` to `.png`.
-6. Open `index.html` in your browser again to check the images and their captions.
+| Filename | Description |
+|---|---|
+| `profile.jpg` | Portrait photo |
+| `cornell_internship.jpg` | Cornell University image |
+| `d2nn_simulation.jpg` | Diffractive optical neural network simulation |
+| `lensless_reconstruction.jpg` | Lensless imaging reconstruction |
+| `nerf_3dgs_render.gif` | Animated NeRF and 3D Gaussian Splatting render |
+| `ddpm_samples.jpg` | DDPM generated samples |
+| `latent_diffusion.jpg` | Latent diffusion samples |
+| `nasa_space_apps_2025.jpg` | NASA Space Apps 2025 team photo |
+| `iumc_2025.jpg` | IUMC 2025 photo |
 
-### Image naming guide
+The website displays images with `object-fit: contain`. This preserves the full image and prevents cropping. All image frames have a fixed aspect ratio and size, so the Cornell image and project visuals stay aligned with the page layout.
 
-| File name | What to put in it | Where it appears |
-|---|---|---|
-| `profile.jpg` | A clear, friendly portrait of you | Main introduction |
-| `cornell_internship.jpg` | Cornell campus, lab, workspace or a photo from your visit | Cornell research section |
-| `d2nn_simulation.jpg` | D²NN architecture, optical simulation or experiment output | Diffractive optics project |
-| `lensless_reconstruction.jpg` | Phase-mask setup, PSF or before/after reconstruction comparison | Lensless imaging project |
-| `nerf_3dgs_render.jpg` | A good NeRF / 3DGS scene render | 3D representation project |
-| `ddpm_samples.jpg` | A grid of DDPM-generated images or denoising steps | DDPM project |
-| `latent_diffusion.jpg` | Latent-space visualisation or generated images | Latent diffusion project |
-| `nasa_space_apps_2025.jpg` | Xplora team photo, NASA Space Apps event or award photo | Awards gallery |
-| `iumc_2025.jpg` | IUMC competition, medal or award photo | Awards gallery |
+### NeRF and 3DGS animation
 
-**Good image practice:** use JPG images, crop them so the subject is easy to see, and keep each image reasonably small (ideally below about 1–2 MB). Use images you have permission to publish. Avoid uploading private lab material or photographs of other people without their permission.
+The NeRF and 3DGS project now loads `assets/nerf_3dgs_render.gif`. A GIF displayed in a normal HTML image element animates automatically. Keep the GIF in the `assets` folder and use that exact filename. The image will remain inside the same compact project frame as the other visuals.
 
-### Suggested captions
+## Upload to GitHub Pages
 
-The website already includes captions under the image areas. They can be edited directly in `index.html`. For example:
+1. Extract the ZIP file.
+2. Upload `index.html`, `styles.css` and `script.js` to the root of your `GamageShakthi.github.io` repository.
+3. Upload your images into the repository's `assets` folder.
+4. Confirm that GitHub Pages is configured to publish from the repository root.
+5. Commit the changes and open `https://GamageShakthi.github.io` after deployment.
 
-- Cornell: `Cornell University · Computational Imaging Lab`
-- NASA: `NASA Space Apps 2025 · Xplora team`
-- IUMC: `Intra-University Mathematics Competition · 2025`
+Keep the three website files in the repository root. Do not put them inside `assets`.
 
-## Create the assets folder on GitHub
+## Updating the site
 
-The downloaded project already includes an `assets` folder with this README file, so it should appear when you upload the project. If you need to create it manually on GitHub:
+- The NeRF animation path is `assets/nerf_3dgs_render.gif`.
+- Replace the placeholder project links with the relevant repository URLs when ready.
+- Change `INCOMING RESEARCH INTERN` to `RESEARCH INTERN` after the role officially begins.
+- Add new news entries inside `.news-list`, placing the latest item first.
+- Replace the YouTube homepage link with your channel URL when it is ready.
 
-1. Open your `GamageShakthi.github.io` repository.
-2. Select **Add file → Create new file**.
-3. In the filename box, type `assets/README.md`.
-4. Add a short note such as `Images for my personal website.`
-5. Commit the new file. GitHub will create the `assets` folder automatically.
-
-To upload images through the GitHub website:
-
-1. Open the `assets` folder in your repository.
-2. Select **Add file → Upload files**.
-3. Drag your image files into the upload area.
-4. Make sure their names match the table above exactly.
-5. Select **Commit changes**.
-
-You can also upload the complete updated project folder from your computer using Git / GitHub Desktop. Keep `index.html`, `styles.css` and `script.js` at the repository root; do not put them inside `assets`.
-
-## Publish at `GamageShakthi.github.io`
-
-1. Create a **public** repository named exactly `GamageShakthi.github.io`.
-2. Upload the contents of this project folder to the repository root.
-3. Go to **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**.
-5. Select branch `main` and folder `/ (root)`, then save.
-6. Once the deployment finishes, visit `https://GamageShakthi.github.io`.
-
-## Keep the site up to date
-
-- **Project links:** the project links currently point to your GitHub profile because individual repository URLs were not supplied. Replace each link with its actual repository URL when ready.
-- **Cornell role:** the site currently says `Incoming Research Intern`. Change this to `Research Intern` after your role officially begins.
-- **News:** add a new `<article class="news-item">...</article>` inside `.news-list`. Put the newest update first.
-- **YouTube:** replace the YouTube homepage links with your channel URL when it is available.
-- **LinkedIn:** check that the LinkedIn URL in the contact section is the correct profile.
-
-Your phone number and referees' contact details are intentionally not included on this public website.
+Your phone number and referees' contact details are not included on this public website.

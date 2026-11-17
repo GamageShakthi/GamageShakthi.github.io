@@ -1,1 +1,1 @@
-Place your website photos and project images in this folder. See the main README.md for the exact filenames and suggested captions.
+Place your website images and animated GIF in this folder. Use the filenames listed in the main README.md.
