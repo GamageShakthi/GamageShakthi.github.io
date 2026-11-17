@@ -1,6 +1,6 @@
 # Shakthi Gamage | Personal Website
 
-A responsive personal website built with HTML, CSS and JavaScript. It uses a dark charcoal theme, readable text and compact image frames.
+A responsive personal website built with HTML, CSS and JavaScript. It uses a near-black midnight theme with cool blue accents, readable text and compact image frames.
 
 ## Preview
 
@@ -20,7 +20,7 @@ Open `index.html` in a browser. Place your image files in the `assets` folder us
 | `nasa_space_apps_2025.jpg` | NASA Space Apps 2025 team photo |
 | `iumc_2025.jpg` | IUMC 2025 photo |
 
-The website displays images with `object-fit: contain`. This preserves the full image and prevents cropping. All image frames have a fixed aspect ratio and size, so the Cornell image and project visuals stay aligned with the page layout.
+The website uses a near-black midnight palette with restrained cool blue accents, fine borders and minimal decoration. The website displays images with `object-fit: contain`. This preserves the full image and prevents cropping. All image frames have a fixed aspect ratio and size, so the Cornell image and project visuals stay aligned with the page layout.
 
 ### NeRF and 3DGS animation
 
